@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --primary-color: #363A2C;
+    --secondary-color: #A7E9F1;
+    --accent1-color: #E8E1C5;
+    --accent2-color: #7A3B69;
+    
+    --heading-font: 'Nunito Sans', serif;
+    --paragraph-font: 'Nunito', serif;
+
+    --nav-background-color: #a7e9f1;
+    --nav-link-color: #363A2C;
+    --nav-hover-link-color: #e8e1c5;
+    --nav-hover-background-color: #7a3b69;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border: 2px solid var(--accent2-color);
+}
+p{
+    padding: 25px;
+}
+
+main{
+    border-left: 2px solid var(--accent2-color);
+    border-right: 2px solid var(--accent2-color);
+    border-bottom: 2px solid var(--accent2-color);
+    background-color: var(--secondary-color);
+    padding:25px;
+}
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+
+}
