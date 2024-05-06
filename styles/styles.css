@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* colors: https://coolors.co/4682b4-012a36-c4d4c8-8f985d */
+
+
 nav{
     background-color: #4682b4;
     padding: 10px;
@@ -9,33 +17,38 @@ main{
 }
 
 aside{
+    position: relative;
     width: 900px;
-    margin: 1px;
-    border: 5px;
-    padding: 5px;
-    background-color: #4E6E58;;
-    color: white;
+    color: #012A36;
     text-align: center;
 }
+aside h2{
+    position:absolute;
+    top: 120px;
+    left: 330px;
+    color: #012A36;
+}
 aside img{
+
     width: 200px;
     height: auto;
-
 }
+
 Nav a {
     color: white;
     display: block;
     padding: 20px;
 }
 h1 {
-    color: steelblue;
+    color: #4682b4;
 }
 main img{
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+
 }
 p{
     padding: 0;
@@ -44,4 +57,11 @@ footer{
     margin-top: 20px;
     border-top: 1px solid black;
     text-align: center;
+}
+/*Class Selectors */
+.box{
+    margin: 1rem;
+    border: 1rem solid #C4D4C8;
+    padding: 1rem;
+    background-color: #AAB181;
 }
