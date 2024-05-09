@@ -17,7 +17,7 @@
 /* giving all words colors and fonts */
 *{
     color: var(--primary-color);
-    font-family: 'Nunito Sans' sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -32,13 +32,17 @@ header{
     padding: 1px;
 }
 header image{
-
     flex: 1;
 }
 
 
+
 div .hero{
     position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 .hero img{
     display: block;
@@ -46,34 +50,49 @@ div .hero{
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    text-align: center;  
+    text-align: center;
+    top: 50%;
+    bottom: 20%;
+    left: 15%;
+    transform: translate(-10%,-50%);
+    padding: 10px;
+    color:#000000;
 }
-article{
+.hero article{
     position: absolute;
-    bottom: 10px;
-    width: 650px;
+    top: 64%;
+    bottom: 0;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(241, 241, 241, 0.5);
+    width: 50%;
+    height: 25%;
+    text-align: center;
 }
-article img{
+.hero article img{
     float:right;
+    width: 200px;
 }
 body{
-    font-family: var(--paragraph-font), sans-serif;
     max-width: 960px;
     padding: 20px;
-    
 }
 section{
-
+    text-align: center;
+    padding: 50px;
     border: 5px solid var(--accent2-color);
-}
-h2{
     text-align: center;
 }
 
+
+
 nav a{
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav a:link, nav a:visited{
     color: var(--nav-link-color);
