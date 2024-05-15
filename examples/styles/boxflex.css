@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    justify-content: space-around;
+}
+section{
+    /* display: flex; */
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+}
