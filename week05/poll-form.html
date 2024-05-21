@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WWD 130 | Html form - Poll Form </title>
+    <meta name="description" content= "Poll-form to figure out how to form">
+    <meta name="author" content="Isaiah White">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WWD 130| Isaiah White |User Poll </h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- Always- Allways label the form things -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <!-- you can also imbed the input in the label, called "implicit label" -->
+                <label for="useremail">Email: <input type="email" name="useremail"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+
+                <label for="browser">What is Your Favorite Browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="brave">Brave</option>
+                </select>
+
+                <label for="pet">Do You Have a Pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+
+                <label for="places-been">List the Places You've Visited:</label>
+                <textarea name="places-been" id="places-been" rows="4" placeholder="Utah, Massachusetss, Vermont, Alaska"></textarea>
+                <button type="submit"> Submit Poll</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright 2024| User Poll thingy | Isaiah White</p>
+    </footer>
+</body>
+</html>
