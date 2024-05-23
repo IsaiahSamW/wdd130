@@ -133,53 +133,52 @@ section{
     border: 5px solid var(--accent2-color);
     align-items: center;
 }
-/* History section */
-.history{
+/* Form for contact us */
+form{
+    padding: 1px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr;
+    border-top: 0px solid #fff;
+    border: 5px solid var(--accent2-color);
     align-items: center;
 }
-.history-title{
-    grid-column: span 3;
-    display: flex;
-    justify-content: center;
-}
-.history-p-1{
-    grid-row: 2;
-    grid-column: 1;
-    display: flex;
-}
-.history img{
-    grid-row: 2;
-    grid-column: 2;
-    width: 200px;
-
-}
-.history-p-2{
-    grid-row:2
-}
-/* Adventure Section */
-.adventure{
+fieldset{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(200px, auto);
-    max-width: 100%;
+    grid-gap: 5px;
 }
-.adventure-title{
-    grid-column: span 10;
-    display: flex;
-    justify-content: center;
+label{
+    text-align: left;
 }
-.adventure img{
-    display: flex;
-    justify-content: center;
-    max-width: 200px;
+input[type="text"]{
+    width: 500px;
+    padding: 5px;
 }
+input[type="email"]{
+    width: 500px;
+    padding: 5px;
+}
+
+button{
+    margin: 1rem;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+button:hover{
+    border: 5px solid navy;
+}
+input:hover{
+    border: 1px solid navy;
+}
+
 /* footer */
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
 }
 .social-links{
     display: flex;
