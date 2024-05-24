@@ -133,6 +133,19 @@ section{
     border: 5px solid var(--accent2-color);
     align-items: center;
 }
+.information{
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 1fr;
+    justify-items: center;
+}
+.map-and-items{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
 /* Form for contact us */
 form{
     padding: 1px;
@@ -164,7 +177,23 @@ input[type="email"]{
 input[type="checkbox"]{
     vertical-align: bottom;
 }
-
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.text-div{
+    grid-template-columns: 3fr 500px 2fr;
+    margin: 0.5rem 0;
+}
+.purpose-div{
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+.subscribtion-div{
+    grid-template-columns: 3fr 1fr 5fr;
+    margin: 0.5rem 0;
+    justify-content: center;
+}
 button{
     margin: 1rem;
     width: 200px;
