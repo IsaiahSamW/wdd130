@@ -137,13 +137,18 @@ section{
 form{
     padding: 1px;
     display: grid;
+    grid-gap: 1px;
     border-top: 0px solid #fff;
     border: 5px solid var(--accent2-color);
-    align-items: center;
+    align-items: left;
 }
 fieldset{
     display: grid;
     grid-gap: 5px;
+}
+input, select, textarea{
+    padding: 5px;
+    font-size: 1.1rem;
 }
 label{
     text-align: left;
@@ -155,6 +160,9 @@ input[type="text"]{
 input[type="email"]{
     width: 500px;
     padding: 5px;
+}
+input[type="checkbox"]{
+    vertical-align: bottom;
 }
 
 button{

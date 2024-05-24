@@ -17,28 +17,45 @@
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <!-- Always- Allways label the form things -->
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname">
-                <!-- you can also imbed the input in the label, called "implicit label" -->
-                <label for="useremail">Email: <input type="email" name="useremail"></label>
+                <!-- Always- Always label the form things -->
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <!-- you can also imbed the input in the label, called "implicit label" -->
+                    <!-- <label for="useremail">Email: <input type="email" name="useremail"></label> -->
+
+                    <label for="useremal">Email: </label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is Your Favorite Browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="brave">Brave</option>
+                    </select>
+                </div>
+                
+                <div class="form-item column1">
+                    <label for="pet">Do You Have a Pet?</label>
+                    <input type="checkbox" id="pet" name="pet">    
+                </div>
 
-                <label for="browser">What is Your Favorite Browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="brave">Brave</option>
-                </select>
+                <div class="form-item">
+                    <label for="places-been">List the Places You've Visited:</label>
+                    <textarea name="places-been" id="places-been" rows="4" placeholder="Utah, Massachusetss, Vermont, Alaska"></textarea>    
+                </div>
+                
+                <div class="form-item">
+                    <button type="submit"> Submit Poll</button>
+                </div>
 
-                <label for="pet">Do You Have a Pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-
-                <label for="places-been">List the Places You've Visited:</label>
-                <textarea name="places-been" id="places-been" rows="4" placeholder="Utah, Massachusetss, Vermont, Alaska"></textarea>
-                <button type="submit"> Submit Poll</button>
             </fieldset>
         </form>
     </main>
