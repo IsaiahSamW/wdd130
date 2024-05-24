@@ -144,6 +144,7 @@ section{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
+    justify-items: center;
 }
 
 /* Form for contact us */
@@ -153,7 +154,6 @@ form{
     grid-gap: 1px;
     border-top: 0px solid #fff;
     border: 5px solid var(--accent2-color);
-    align-items: left;
 }
 fieldset{
     display: grid;
@@ -180,10 +180,14 @@ input[type="checkbox"]{
 .form-item{
     display: grid;
     align-items: center;
+    padding: 5px;
+
 }
 .text-div{
     grid-template-columns: 3fr 500px 2fr;
     margin: 0.5rem 0;
+    padding: 5px;
+    justify-items: center;
 }
 .purpose-div{
     grid-template-columns: 1fr 2fr;
@@ -192,8 +196,12 @@ input[type="checkbox"]{
 .subscribtion-div{
     grid-template-columns: 3fr 1fr 5fr;
     margin: 0.5rem 0;
-    justify-content: center;
+    justify-items: center;
 }
+
+
+
+
 button{
     margin: 1rem;
     width: 200px;
