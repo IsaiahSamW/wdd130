@@ -247,7 +247,19 @@ input[type="checkbox"]{
     grid-gap: 50px;
     justify-content: space-around;
 }
-
+.trips2{
+    display: grid;
+    justify-content: center;
+}
+.trips-table{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+.trips2-title{
+    display: grid;
+    justify-content: center;
+}
 
 table {
     border-collapse: collapse;
@@ -284,7 +296,6 @@ table {
   }
   
   tfoot th {
-    /* background-color:; #000 shorthand for black */
     color: black;
     text-align: right;
   }
