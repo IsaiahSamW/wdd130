@@ -68,7 +68,9 @@ nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-
+a:hover{
+    color: var(--accent2-color);
+}
 /* Big image's box */
 .hero{
     display: grid;
@@ -89,7 +91,7 @@ nav a:hover{
     width: 100%;
     height: auto;
 }
-h1{
+h1, h2{
     text-align: center;
 }
 /* title */
@@ -102,6 +104,7 @@ h1{
     justify-content: center;
     padding: 10px;
     color:#000000;
+    background-color: rgba(241, 241, 241, 0.5);
 }
 /* text article in Big Image */
 .hero article{
@@ -111,7 +114,6 @@ h1{
     display: flex;
     justify-content: center;
     transform: translate(20%, 50%);
-    /* align-content: baseline; */
     max-height: 50%;
     max-width: 75%;
     background-color: rgba(241, 241, 241, 0.5);
@@ -148,10 +150,10 @@ button{
 }
 
 button:hover{
-    border: 5px solid navy;
+    border: 5px solid var(--nav-hover-background-color);
 }
 input:hover{
-    border: 1px solid navy;
+    border: 1px solid var(--nav-hover-background-color);
 }
 
 /* footer */
@@ -302,4 +304,18 @@ table {
   
   tfoot td {
     font-weight: bold;
-  }
+}
+
+.about{
+    display: grid;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+
+.index-pictures-outline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    justify-content: space-around;
+}
